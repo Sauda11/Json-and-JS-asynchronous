@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+        <!--The async keyword transforms a regular JavaScript function into an asynchronous function, causing it to return a Promise.
+        The await keyword is used inside an async function to pause its execution and wait for a Promise to resolve before continuing.-->
+
+        <!--A promise in JavaScript is an object that represents the eventual completion or failure of an asynchronous operation.-->
+    <h2>JavaScript async / await</h2>
+    <h1 id="result"></h1>
+    <script>
+      async function add(a,b) {
+        let response = await a + b;
+        display(response);
+      }
+      function display(sum) {
+      document.getElementById("result").innerHTML = sum;
+      }
+      add(5,20);
+    </script>
+  </body>
+</html>
